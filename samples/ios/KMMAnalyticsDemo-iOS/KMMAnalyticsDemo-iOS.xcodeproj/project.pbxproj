@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		943A20912E8AD799009B82CF /* KMMAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 943A20902E8AD799009B82CF /* KMMAnalytics */; };
 		94422C7B2E889DB2006C84B0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 94422C7A2E889DB2006C84B0 /* FirebaseAnalytics */; };
 		94422C7D2E889DB2006C84B0 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 94422C7C2E889DB2006C84B0 /* FirebaseAnalyticsCore */; };
 		94422C7F2E889DB2006C84B0 /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 94422C7E2E889DB2006C84B0 /* FirebaseAnalyticsIdentitySupport */; };
 		94422C812E889DB2006C84B0 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 94422C802E889DB2006C84B0 /* FirebaseCore */; };
 		94422C832E889DB2006C84B0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 94422C822E889DB2006C84B0 /* FirebaseCrashlytics */; };
-		94D8A3D12E8879810061661B /* KMMAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 94D8A3D02E8879810061661B /* KMMAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +33,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94422C7F2E889DB2006C84B0 /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				943A20912E8AD799009B82CF /* KMMAnalytics in Frameworks */,
 				94422C812E889DB2006C84B0 /* FirebaseCore in Frameworks */,
 				94422C7B2E889DB2006C84B0 /* FirebaseAnalytics in Frameworks */,
 				94422C832E889DB2006C84B0 /* FirebaseCrashlytics in Frameworks */,
 				94422C7D2E889DB2006C84B0 /* FirebaseAnalyticsCore in Frameworks */,
-				94D8A3D12E8879810061661B /* KMMAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +80,12 @@
 			);
 			name = "KMMAnalyticsDemo-iOS";
 			packageProductDependencies = (
-				94D8A3D02E8879810061661B /* KMMAnalytics */,
 				94422C7A2E889DB2006C84B0 /* FirebaseAnalytics */,
 				94422C7C2E889DB2006C84B0 /* FirebaseAnalyticsCore */,
 				94422C7E2E889DB2006C84B0 /* FirebaseAnalyticsIdentitySupport */,
 				94422C802E889DB2006C84B0 /* FirebaseCore */,
 				94422C822E889DB2006C84B0 /* FirebaseCrashlytics */,
+				943A20902E8AD799009B82CF /* KMMAnalytics */,
 			);
 			productName = "KMMAnalyticsDemo-iOS";
 			productReference = 940D84322E8877E5004DE997 /* KMMAnalyticsDemo-iOS.app */;
@@ -116,8 +116,8 @@
 			mainGroup = 940D84292E8877E5004DE997;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				94D8A3CF2E8879810061661B /* XCRemoteSwiftPackageReference "KMMAnalytics" */,
 				94422C792E889DB2006C84B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				943A208F2E8AD799009B82CF /* XCRemoteSwiftPackageReference "KMMAnalytics" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 940D84332E8877E5004DE997 /* Products */;
@@ -349,6 +349,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		943A208F2E8AD799009B82CF /* XCRemoteSwiftPackageReference "KMMAnalytics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aleksasimic/KMMAnalytics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 		94422C792E889DB2006C84B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -357,17 +365,14 @@
 				minimumVersion = 12.3.0;
 			};
 		};
-		94D8A3CF2E8879810061661B /* XCRemoteSwiftPackageReference "KMMAnalytics" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/aleksa-aetherius/KMMAnalytics.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.6;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		943A20902E8AD799009B82CF /* KMMAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 943A208F2E8AD799009B82CF /* XCRemoteSwiftPackageReference "KMMAnalytics" */;
+			productName = KMMAnalytics;
+		};
 		94422C7A2E889DB2006C84B0 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 94422C792E889DB2006C84B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -392,11 +397,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 94422C792E889DB2006C84B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
-		};
-		94D8A3D02E8879810061661B /* KMMAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 94D8A3CF2E8879810061661B /* XCRemoteSwiftPackageReference "KMMAnalytics" */;
-			productName = KMMAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

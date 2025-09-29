@@ -1,5 +1,5 @@
 {
-  "originHash" : "7bff5355f4910b4e0f2f33bf6adb994a0e4e46f12b9f61292ed6d3efff55399b",
+  "originHash" : "9f8f87e99752f403419ab28be2aafa1666fd9a9e14edf77cc62ad8eab270d81e",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -94,10 +94,10 @@
     {
       "identity" : "kmmanalytics",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/aleksa-aetherius/KMMAnalytics.git",
+      "location" : "https://github.com/aleksasimic/KMMAnalytics.git",
       "state" : {
-        "revision" : "e1af01c22443accc2bb0a1be94df16d05be0b497",
-        "version" : "1.0.6"
+        "revision" : "64346e36769345c5004719138de10db283bb65a8",
+        "version" : "1.0.1"
       }
     },
     {
