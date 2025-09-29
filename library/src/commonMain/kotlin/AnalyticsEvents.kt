@@ -1,5 +1,3 @@
-package io.github.kotlin.fibonacci
-
 import dev.gitlive.firebase.Firebase
 import dev.gitlive.firebase.analytics.analytics
 
