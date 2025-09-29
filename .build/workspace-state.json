@@ -1,0 +1,26 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "kmmanalytics",
+          "kind" : "root",
+          "location" : "/Users/aleksasimic/Applications/KMMAnalytics/KMMAnalytics",
+          "name" : "KMMAnalytics"
+        },
+        "path" : "/Users/aleksasimic/Applications/KMMAnalytics/KMMAnalytics/.build/artifacts/kmmanalytics/KMMAnalytics/KMMAnalytics.xcframework",
+        "source" : {
+          "checksum" : "500814033d2d649a306eb9ec33c1652e53b090e18b87aa0038d4ee9cb7578c2c",
+          "type" : "remote",
+          "url" : "https://github.com/aleksa-aetherius/KMMAnalytics/releases/download/1.0/KMMAnalytics.xcframework.zip"
+        },
+        "targetName" : "KMMAnalytics"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}

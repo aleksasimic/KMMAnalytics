@@ -1,0 +1,5 @@
+framework module "KMMAnalytics" {
+    umbrella header "KMMAnalytics.h"
+    export *
+    module * { export * }
+}

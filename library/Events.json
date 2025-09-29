@@ -1,0 +1,22 @@
+[
+  {
+    "name": "home_screen_viewed",
+    "params": [
+      { "name": "screen_name", "type": "string" },
+      { "name": "timestamp", "type": "int" }
+    ]
+  },
+  {
+    "name": "purchase_completed",
+    "params": [
+      { "name": "product_id", "type": "string" },
+      { "name": "price", "type": "int" }
+    ]
+  },
+  {
+    "name": "cart_added",
+    "params": [
+      { "name": "amount", "type": "int" }
+    ]
+  }
+]
